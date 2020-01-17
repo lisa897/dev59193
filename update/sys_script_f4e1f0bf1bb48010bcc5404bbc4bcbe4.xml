@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_42072_expense_ma_expense</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Balance weekly Timecard</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var wtc = new GlideRecord('x_42072_expense_ma_weekly_timecard');
+                if(wtc.get('sys_id', current.weekly_timecard)){
+                    var hours = wtc.getValue('required_hours');
+					
+					var expenses = new GlideAggregate('x_42072_expense_ma_expense');
+					expenses.addAggregate('SUM', 'worktime');
+					expenses.addQuery('weekly_timecard', current.weekly_timecard);
+					expenses.query();
+					var balance = 0;
+					while (expenses.next()) {
+					  var allExpenses = 0;
+					  allExpenses = expenses.getAggregate('SUM', 'worktime');
+						balance = hours - allExpenses;
+						 }
+					wtc.balance = balance;
+					wtc.update();
+					
+                               
+                }
+                
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-05 14:40:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4e1f0bf1bb48010bcc5404bbc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Balance weekly Timecard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+        <sys_update_name>sys_script_f4e1f0bf1bb48010bcc5404bbc4bcbe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-05 14:40:01</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f4e1f0bf1bb48010bcc5404bbc4bcbe4"/>
+</record_update>

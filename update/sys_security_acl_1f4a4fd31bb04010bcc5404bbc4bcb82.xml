@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_42072_expense_ma_weekly_timecard</description>
+        <name>x_42072_expense_ma_weekly_timecard</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-04 10:49:40</sys_created_on>
+        <sys_id>1f4a4fd31bb04010bcc5404bbc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_42072_expense_ma_weekly_timecard</sys_name>
+        <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+        <sys_update_name>sys_security_acl_1f4a4fd31bb04010bcc5404bbc4bcb82</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-04 10:49:40</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-04 10:44:25</sys_created_on>
+        <sys_id>1a190b931bb04010bcc5404bbc4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_42072_expense_ma_weekly_timecard.x_42072_expense_ma.weekly_timecard_user</sys_name>
+        <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+        <sys_security_acl display_value="x_42072_expense_ma_weekly_timecard">9a190b931bb04010bcc5404bbc4bcbd3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1a190b931bb04010bcc5404bbc4bcbd6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-04 10:44:25</sys_updated_on>
+        <sys_user_role display_value="x_42072_expense_ma.weekly_timecard_user" name="x_42072_expense_ma.weekly_timecard_user">ca19c3531bb04010bcc5404bbc4bcb28</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</application>
+        <file_path/>
+        <instance_id>75d86c34db60fb0042b321c4059619df</instance_id>
+        <instance_name>dev77796</instance_name>
+        <name>sys_security_acl_role_1a190b931bb04010bcc5404bbc4bcbd6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-11-04 10:44:25</sys_created_on><sys_id>1a190b931bb04010bcc5404bbc4bcbd6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_42072_expense_ma_weekly_timecard.x_42072_expense_ma.weekly_timecard_user</sys_name><sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package><sys_policy/><sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope><sys_security_acl display_value="x_42072_expense_ma_weekly_timecard">9a190b931bb04010bcc5404bbc4bcbd3</sys_security_acl><sys_update_name>sys_security_acl_role_1a190b931bb04010bcc5404bbc4bcbd6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-11-04 10:44:25</sys_updated_on><sys_user_role display_value="x_42072_expense_ma.weekly_timecard_user" name="x_42072_expense_ma.weekly_timecard_user">ca19c3531bb04010bcc5404bbc4bcb28</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>335242950</payload_hash>
+        <record_name>x_42072_expense_ma_weekly_timecard.x_42072_expense_ma.weekly_timecard_user</record_name>
+        <reverted_from/>
+        <source>80374f9f1b704010bcc5404bbc4bcbb6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-04 10:44:25</sys_created_on>
+        <sys_id>de190b931bb04010bcc5404bbc4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e36040b770000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-04 10:44:25</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>1a190b930cb0401094c76408ae8ce1d8</update_guid>
+        <update_guid_history>1a190b930cb0401094c76408ae8ce1d8:335242950</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_42072_expense_ma_weekly_timecard.x_42072_expense_ma.weekly_timecard_user">e20a0bd31bb04010bcc5404bbc4bcb79</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-04 10:48:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>5ab148ef6a5b470ea48e31314d60e759</sys_id>
+        <sys_metadata>1a190b931bb04010bcc5404bbc4bcbd6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_42072_expense_ma_weekly_timecard.x_42072_expense_ma.weekly_timecard_user</sys_name>
+        <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+        <sys_parent display_value="">9a190b931bb04010bcc5404bbc4bcbd3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+        <sys_scope_delete display_value="">34eca8cf0e144fd58ca31f18f0ec2249</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_1a190b931bb04010bcc5404bbc4bcbd6</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_1a190b931bb04010bcc5404bbc4bcbd6">de190b931bb04010bcc5404bbc4bcbd8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-04 10:48:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="story" label="Story" language="en" table="x_42072_expense_ma_expense">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>story</element>
+            <help/>
+            <hint/>
+            <label>Story</label>
+            <language>en</language>
+            <name>x_42072_expense_ma_expense</name>
+            <plural>Stories</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-04 11:16:55</sys_created_on>
+            <sys_id>ea8053d71bf04010bcc5404bbc4bcb3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Story</sys_name>
+            <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+            <sys_update_name>sys_documentation_x_42072_expense_ma_expense_story_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-04 11:16:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

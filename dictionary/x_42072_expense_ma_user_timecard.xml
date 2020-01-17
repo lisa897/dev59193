@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User TimeCard" max_length="40" name="x_42072_expense_ma_user_timecard" type="collection">
+        <element label="Balance" max_length="40" name="balance" type="float"/>
+        <element default="javascript:gs.getUserID();" display="true" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="User" max_length="32" name="user" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Weekly Hours" max_length="40" name="weekly_hours" type="integer"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

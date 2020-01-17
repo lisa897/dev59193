@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Expense" max_length="40" name="x_42072_expense_ma_expense" type="collection">
+        <element label="Description" max_length="255" name="description" type="string_full_utf8"/>
+        <element label="Expense On" max_length="40" name="expense_on" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Product" max_length="32" name="product" reference="cmdb_application_product_model" type="reference"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="3"/>
+                <element inactive_on_update="false" label="Booked" value="10"/>
+                <element inactive_on_update="false" label="Draft" value="1"/>
+                <element inactive_on_update="false" label="Rejected" value="-1"/>
+                <element inactive_on_update="false" label="Waiting for Approval" value="2"/>
+            </choice>
+        </element>
+        <element label="Story" max_length="32" name="story" reference="rm_story" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Weekly TimeCard" max_length="32" name="weekly_timecard" reference="x_42072_expense_ma_weekly_timecard" type="reference"/>
+        <element label="Worktime" max_length="40" name="worktime" type="float"/>
+        <index name="index">
+            <element name="product"/>
+        </index>
+        <index name="index2">
+            <element name="weekly_timecard"/>
+        </index>
+        <index name="index3">
+            <element name="user"/>
+        </index>
+        <index name="index4">
+            <element name="story"/>
+        </index>
+    </element>
+</database>

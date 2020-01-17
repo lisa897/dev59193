@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Generate Weekly Timecards</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-11-06 14:05:14</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>weekly</run_type>
+        <script><![CDATA[var gr = new GlideRecord('x_42072_expense_ma_user_timecard');
+gr.query();
+
+while(gr.next()) {
+	var wtc = new GlideRecord('x_42072_expense_ma_weekly_timecard');
+	var date = new GlideDateTime();
+
+	wtc.addQuery('start_of_week', '<=', date);
+        wtc.addQuery('end_of_week', '>=', date);
+       wtc.addQuery('user_timecard', '=', gr.sys_id);
+        wtc.query();
+		
+if(wtc.next()){
+                              gs.info('Weekly Card');
+                              
+                }else{
+		
+                
+				wtc.initialize();
+				wtc.user_timecard = gr.sys_id;
+                wtc.required_hours = gr.weekly_timecard;
+                wtc.start_of_week = date.getDate();
+				var gd = new GlideDateTime();
+				gd.addDaysLocalTime(6);
+                wtc.end_of_week = gd.getDate();
+				wtc.insert();
+                }
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 14:05:58</sys_created_on>
+        <sys_id>a73acac41b050010bcc5404bbc4bcb54</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Generate Weekly Timecards</sys_name>
+        <sys_package display_value="Expense Management" source="x_42072_expense_ma">eda056cbdb33320051e2f8fdbf961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Management">eda056cbdb33320051e2f8fdbf961964</sys_scope>
+        <sys_update_name>sysauto_script_a73acac41b050010bcc5404bbc4bcb54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 14:24:42</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
